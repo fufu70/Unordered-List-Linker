@@ -1,0 +1,9 @@
+{
+  "name": "unordered-list-linker",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}

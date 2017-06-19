@@ -1,0 +1,64 @@
+/**
+ * 
+ */
+
+@mixin unordered-list-linker(
+	$linker-image: url(inline-image("/example/images/tall-rectangle.svg")),
+	$linker-image-left-offset: 15px,
+	$linker-image-size: 35%,
+	$linker-image-top-offset: -5px,
+	$bullet-color: #555,
+	$bullet-offset: 16px,
+	$bullet-size: 34px,
+	$bullet-top: 23px
+) {
+	&__unordered-list {
+	    display: block;
+	    height: auto;
+	    position: relative;
+
+	    &:before {
+			background-image: $linker-image;
+		    background-repeat-x: no-repeat;
+		    background-size: $linker-image-size;
+			content: "";
+			height: 100%;
+			left: $linker-image-left-offset;
+			position: absolute;
+			top: $bullet-size + $bullet-top + $linker-image-top-offset;
+			width: $bullet-size;
+		}
+
+		&:last-child {
+			&:before {
+				content: none;	
+			}
+		}
+	}
+
+	&__item {
+		float: left;
+		width: calc(100% - 51px);
+	}
+
+	&__bullet {
+	    float: left;
+	    height: $bullet-size + $bullet-offset;
+	    top: $bullet-top;
+	    position: relative;
+	    width: $bullet-size + $bullet-offset;
+
+	    &:after {
+			background-color: $bullet-color;
+			border-radius: 50%;
+			content: "";
+			height: $bullet-size;
+			position: absolute;
+			width: $bullet-size;
+		}
+	}
+
+    &__clear {
+    	clear: both;
+    }
+}

@@ -1,0 +1,45 @@
+// bower:scss
+// endbower
+// 
+@import "../../src/unordered-list-linker";
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  @include unordered-list-linker(
+    url(inline-image("/example/images/tall-rectangle.svg")), /* linker-image */
+    15px, /* linker-image-left-offset */
+    35%, /* linker-image-size */
+    -5px, /* linker-image-top-offset */
+    #555, /* bullet-color */
+    16px, /* bullet-offset */
+    34px, /* bullet-size */
+    23px /* bullet-top */
+  );
+}
