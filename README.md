@@ -70,4 +70,4 @@ $ bower install
 $ gulp serve
 ```
 
-[example]: https://github.com/fufu70/Unordered-List-Linker/common/example.png "Example"
+[example]: https://raw.githubusercontent.com/fufu70/Unordered-List-Linker/master/common/example.png "Example"
