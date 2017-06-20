@@ -1,9 +1,9 @@
-/**
- * 
- */
+
+// a simple tall rectangle, represented in the /example/images/tall-rectange.svg file
+$default-linker-image: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.3 34.7"><defs><style>.cls-1{fill:#555;}</style></defs><title>tall-rectangle</title><rect class="cls-1" width="8.3" height="25.7"/></svg>');
 
 @mixin unordered-list-linker(
-	$linker-image: url(inline-image("/example/images/tall-rectangle.svg")),
+	$linker-image: $default-linker-image,
 	$linker-image-left-offset: 15px,
 	$linker-image-size: 35%,
 	$linker-image-top-offset: -5px,
@@ -38,7 +38,7 @@
 
 	&__item {
 		float: left;
-		width: calc(100% - 51px);
+		width: calc(100% - #{$bullet-size + $bullet-offset + 1px});
 	}
 
 	&__bullet {

@@ -1,6 +1,4 @@
-// bower:scss
-// endbower
-// 
+
 @import "../../src/unordered-list-linker";
 
 .browserupgrade {
@@ -32,14 +30,5 @@ body {
     letter-spacing: -1px;
   }
 
-  @include unordered-list-linker(
-    url(inline-image("/example/images/tall-rectangle.svg")), /* linker-image */
-    15px, /* linker-image-left-offset */
-    35%, /* linker-image-size */
-    -5px, /* linker-image-top-offset */
-    #555, /* bullet-color */
-    16px, /* bullet-offset */
-    34px, /* bullet-size */
-    23px /* bullet-top */
-  );
+  @include unordered-list-linker();
 }
