@@ -55,6 +55,8 @@ The html structure is as follows:
 </div>
 ```
 
+![alt text][example]
+
 ## Testing
 
 To test the repository clone the repo, install gulp and bower globally, install npm packages, install bower packages, and run the gulp server:
@@ -67,3 +69,5 @@ $ npm install
 $ bower install
 $ gulp serve
 ```
+
+[example]: https://github.com/fufu70/Unordered-List-Linker/common/example.png "Example"

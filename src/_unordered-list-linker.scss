@@ -5,7 +5,7 @@ $default-linker-image: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name=
 @mixin unordered-list-linker(
 	$linker-image: $default-linker-image,
 	$linker-image-left-offset: 15px,
-	$linker-image-size: 35%,
+	$linker-image-size: 15px,
 	$linker-image-top-offset: -5px,
 	$bullet-color: #555,
 	$bullet-offset: 16px,
@@ -20,13 +20,13 @@ $default-linker-image: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name=
 	    &:before {
 			background-image: $linker-image;
 		    background-repeat-x: no-repeat;
-		    background-size: $linker-image-size;
+		    background-size: 100%;
 			content: "";
 			height: 100%;
 			left: $linker-image-left-offset;
 			position: absolute;
 			top: $bullet-size + $bullet-top + $linker-image-top-offset;
-			width: $bullet-size;
+			width: $linker-image-size;
 		}
 
 		&:last-child {
