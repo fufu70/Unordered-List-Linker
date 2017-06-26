@@ -71,3 +71,8 @@ $ gulp serve
 ```
 
 [example]: https://raw.githubusercontent.com/fufu70/Unordered-List-Linker/master/common/example.png "Example"
+
+
+## Contributors
+* [Mario Serrette](https://www.linkedin.com/in/mario-serrette-56877921) - Designed the Unordered-List-Linker.
+* [Christian Micklisch](https://github.com/fufu70) - CSS styling.
